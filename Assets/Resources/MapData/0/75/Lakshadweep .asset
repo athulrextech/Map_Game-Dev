@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e08b40a88ce6c48b8305b5ad686d3d, type: 3}
+  m_Name: 'Lakshadweep '
+  m_EditorClassIdentifier: 
+  ParentData: {fileID: 11400000, guid: ca1ab34a56875004b9a7a2bbdfb24805, type: 2}
+  Id: 0.75.15
+  Name: 'Lakshadweep '
+  Position: {x: -4.845, y: -4.43}
+  YRotation: 0
+  Scale: 1
+  ParentTexture: {fileID: 0}
+  ChildTexture: {fileID: 2800000, guid: 8c32f002ffb41954e82d01d42d6b615a, type: 3}
+  ChildData: []
+  notPlceable: 0

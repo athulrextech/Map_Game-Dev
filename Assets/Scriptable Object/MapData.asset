@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd44a2098016cd44bb8dc67bb5351f9, type: 3}
+  m_Name: MapData
+  m_EditorClassIdentifier: 
+  MapData:
+    Map:
+      Id: 
+      Name: World
+      Position: {x: 0, y: 0}
+      Rotation: {x: 0, y: 0}
+      Scale: {x: 0, y: 0}
+      Image: {fileID: 0}
+      ChildPieces:
+      - Id: 0
+        Name: India
+        Position: {x: 0, y: 0}
+        Rotation: {x: 0, y: 0}
+        Scale: {x: 0, y: 0}
+        Image: {fileID: 21300000, guid: f661b81bd86f95a42bba08e872bf1140, type: 3}
+        ChildPieces:
+        - Id: 0.0
+          Name: Andaman Nicobar
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: cc86d31cabac5b94fa7f0c3462cedc5d, type: 3}
+          ChildPieces: []
+        - Id: 0.1
+          Name: 'Andhra Pradesh '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: f2c0de36d094e7141bf8dc66123a1032, type: 3}
+          ChildPieces: []
+        - Id: 0.2
+          Name: 'Arunachal Pradesh '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: e927d382cbb6c364eacf13e95e497ea0, type: 3}
+          ChildPieces: []
+        - Id: 0.3
+          Name: Assam
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 5f8270e20982a7a429b6b7daafdc6aa9, type: 3}
+          ChildPieces: []
+        - Id: 0.4
+          Name: Chhattisgarh
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 8e9dc2a694f59e04096bba697bf674e4, type: 3}
+          ChildPieces: []
+        - Id: 0.5
+          Name: Delhi
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 5994235298c883742a7deee94be6c1e4, type: 3}
+          ChildPieces: []
+        - Id: 0.6
+          Name: Goa
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 82b0bbb0d97e33b4ea4fd3190e6a36ef, type: 3}
+          ChildPieces: []
+        - Id: 0.7
+          Name: 'Gujarat '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: c783a0d6787b6c04f933b9a7d1247927, type: 3}
+          ChildPieces: []
+        - Id: 0.8
+          Name: Haryana
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 835c2bcb5f5c08047bf8f107e8ac0a52, type: 3}
+          ChildPieces: []
+        - Id: 0.9
+          Name: 'Himachal Pradesh '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 91b83d908a4365349bb3df802f4b8465, type: 3}
+          ChildPieces: []
+        - Id: 0.10
+          Name: Jammu&kashmir
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: bcd09c7bc1a8498479b3e649a75db620, type: 3}
+          ChildPieces: []
+        - Id: 0.11
+          Name: 'Jharkhand '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 290cfca4655c626479f962ef689f0707, type: 3}
+          ChildPieces: []
+        - Id: 0.12
+          Name: 'Karnataka '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 9a4db91df418c9343a0cdc313f146a21, type: 3}
+          ChildPieces: []
+        - Id: 0.13
+          Name: Kerala
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 14fd7986b2e420c41bb4d3e3341def78, type: 3}
+          ChildPieces: []
+        - Id: 0.14
+          Name: Ladakh
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 6c4d770a3499716408d2bbde183f1393, type: 3}
+          ChildPieces: []
+        - Id: 0.15
+          Name: 'Lakshadweep '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 8c32f002ffb41954e82d01d42d6b615a, type: 3}
+          ChildPieces: []
+        - Id: 0.16
+          Name: Madhya Pradesh
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: d2b365371a9660545a52152c448a6830, type: 3}
+          ChildPieces: []
+        - Id: 0.17
+          Name: Maharashtra
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 99ac422d321fbe14da5fe2f25a131230, type: 3}
+          ChildPieces: []
+        - Id: 0.18
+          Name: Manipur
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: d78ffea530789f84fa6f49586bf4e3ea, type: 3}
+          ChildPieces: []
+        - Id: 0.19
+          Name: Meghalaya
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: f6af9a48e3901ab43a0ed88da52947dc, type: 3}
+          ChildPieces: []
+        - Id: 0.20
+          Name: 'Mizoram '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: c62edd8e7765fd54dbc69f9a8aa44c99, type: 3}
+          ChildPieces: []
+        - Id: 0.21
+          Name: Nagaland
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 641df7058ad97c54fbfc4d99c13da846, type: 3}
+          ChildPieces: []
+        - Id: 0.22
+          Name: 'Odisha '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: d990b7a8562beff48aa7fbe42778d28a, type: 3}
+          ChildPieces: []
+        - Id: 0.23
+          Name: Punjab
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: ff6ac8e5506192149a5c097d75d7c540, type: 3}
+          ChildPieces: []
+        - Id: 0.24
+          Name: Rajasthan
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 13c828b5df6b4524d8423293c20ac9e6, type: 3}
+          ChildPieces: []
+        - Id: 0.25
+          Name: Sikkim
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: af33e9f5edddcaf46b5acae63167abcf, type: 3}
+          ChildPieces: []
+        - Id: 0.26
+          Name: Tamil Nadu
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 0d232b54d01405d498b9c5b43ab7ad7b, type: 3}
+          ChildPieces: []
+        - Id: 0.27
+          Name: 'Telengana '
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 31faab3d63b37a348b31622f02bba949, type: 3}
+          ChildPieces: []
+        - Id: 0.28
+          Name: Tripura
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 7f8131c1fdc7674498da5ef8ae2890da, type: 3}
+          ChildPieces: []
+        - Id: 0.29
+          Name: Uttar Pradesh
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 10a3281a304bbcb468fe082e123900f9, type: 3}
+          ChildPieces: []
+        - Id: 0.30
+          Name: Uttarakhand
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: 71ad44a82eaaf5a458a15c07ae52fe77, type: 3}
+          ChildPieces: []
+        - Id: 0.31
+          Name: West Bengal
+          Position: {x: 0, y: 0}
+          Rotation: {x: 0, y: 0}
+          Scale: {x: 0, y: 0}
+          Image: {fileID: 21300000, guid: e31727e6e92f9234f918a58b2e3cd5f8, type: 3}
+          ChildPieces: []
