@@ -152,6 +152,11 @@ public class CameraControl : MonoBehaviour
 
             newPos.x = Mathf.Clamp(newPos.x, xMin, xMax);
             newPos.y = Mathf.Clamp(newPos.y, yMin, yMax);
+            Debug.Log("xMin:" + xMin);
+            Debug.Log("xMax:" + xMax);
+            Debug.Log("yMin:" + yMin);
+            Debug.Log("yMax:" + yMax);
+
 
             cam.transform.position = Vector3.Lerp(prePos, newPos, Time.deltaTime * panSmoothFactor) ; //newPos ;
 

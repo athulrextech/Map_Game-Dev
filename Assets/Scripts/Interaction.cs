@@ -69,6 +69,8 @@ public class Interaction : MonoBehaviour
             _holdObjectTransform = null;
 
             _camControl.CanDrag = true;
+            CamController.canDrag = true;
+            Debug.Log("Bottom Panel relesed");
             HoldCanceledEvent?.Invoke();
         });
      
@@ -97,6 +99,8 @@ public class Interaction : MonoBehaviour
             if (pieceUI != null)
             {
                 _camControl.CanDrag = false;
+                CamController.canDrag = false;
+                Debug.Log("Bottom Panel Clicked");
                 _holdObjectTransform = pieceUI.PieceObject.transform;
                 pieceUI.gameObject.SetActive(false);
             }

@@ -28,6 +28,7 @@ public class MenuUiPanel : PanelBase<PanelManager>
 
     private void OnStartButtonClick()
     {
+        Debug.Log("print case 3");
         manager.UiManager.GameManager.StartGame();
         manager.EnablePanel(typeof(GamePlayUi));
     }

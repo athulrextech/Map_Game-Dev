@@ -37,6 +37,8 @@ public class ObjectList : MonoBehaviour
 
     private void OnClickDirectionButton(int dir)
     {
+        Debug.Log("print case 2");
+
         curruntInx = curruntInx + dir; //Mathf.Clamp( curruntInx + dir,0, MapSelectionButtons.Count-1);
 
         if (curruntInx < 0)
@@ -93,7 +95,7 @@ public class ObjectList : MonoBehaviour
 
     void OnClickMapObj(int inx)
     {
-
+        Debug.Log("print case 1");
     }
 
 }

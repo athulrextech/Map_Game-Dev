@@ -9,6 +9,7 @@ public class GameOverPanel : PanelBase<PanelManager>
 {
     [SerializeField] TextMeshProUGUI timeText;
 
+
     public override void Init(PanelManager uIManager)
     {
         manager = uIManager;
