@@ -6,7 +6,7 @@ using UnityEngine;
 using static GameManager;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Serialized Private Field
@@ -59,6 +59,9 @@ public class GameManager : MonoBehaviour
     private string formattedHighScore;
     [SerializeField] public TextMeshProUGUI currentTime;
     private string formattedStopTime;
+    [SerializeField] public Ads _ads;
+
+    //Ads ads = GameObject.FindGameObjectWithTag("ads").GetComponent<Ads>();
 
 
     
@@ -72,6 +75,8 @@ public class GameManager : MonoBehaviour
         _interaction = GetComponent<Interaction>();
         _interaction.HoldCanceledEvent += Interaction_HoldCanceledEvent;
         GameStateChanged += GameManager_GameStateChanged;
+
+        _ads = GetComponent<Ads>();
     }
 
     private void GameManager_GameStateChanged(GameStates state)
@@ -126,6 +131,7 @@ public class GameManager : MonoBehaviour
         GameStateChanged(_currentState);
 
         _cameraControl.ResetCamera();
+        CamController.canDrag = true;
 
         Vector2 min = -_parentObj.SpriteRenderer.size / 2;
         Vector2 max = _parentObj.SpriteRenderer.size / 2;
@@ -177,6 +183,7 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
+       
         StopTime();
 
 
@@ -196,9 +203,14 @@ public class GameManager : MonoBehaviour
             SetHighScore();
         }
 
+        CamController.canDrag = false;
+
 
         _currentState = GameStates.GameOver;
         GameStateChanged(_currentState);
+
+        _ads.ShowInterstitialAd();
+       
     }
     private string FormatTime(int time)
     {
@@ -245,6 +257,10 @@ public class GameManager : MonoBehaviour
         stopTime = _timerSystem._currentTime;
         Debug.Log("stopped time :" + stopTime);
 
+    }
+    public void BackButton()
+    {
+        SceneManager.LoadScene(0);
     }
 
 }

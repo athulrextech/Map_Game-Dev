@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SaveData : MonoBehaviour
 {
@@ -39,5 +40,9 @@ public class SaveData : MonoBehaviour
         int seconds = (time % 10000) / 100;
         int milliseconds = time % 100;
         return string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milliseconds);
+    }
+    public void BackButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }

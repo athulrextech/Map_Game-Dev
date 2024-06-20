@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using DG.Tweening;
 using System;
+using TMPro;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(BoxCollider2D))]
 public class PieceObject : MonoBehaviour, IClickable, IDraggable
@@ -32,8 +33,12 @@ public class PieceObject : MonoBehaviour, IClickable, IDraggable
     public SpriteRenderer SpriteRenderer { get { return _spriteRenderer; } }
     #endregion
 
+    public TextMeshProUGUI placementCountText;
+    public static int correctlyPlacedCount = 0;
+    private int totalObjects = 5;
     private void Awake()
     {
+        correctlyPlacedCount = 0;
         Initialize();
     }
 
@@ -44,8 +49,14 @@ public class PieceObject : MonoBehaviour, IClickable, IDraggable
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _collider2D = GetComponent<BoxCollider2D>();
         _collider2D.size = _spriteRenderer.sprite.textureRect.size / 100;
-    }
+        
 
+    }
+    private void Start()
+    {
+        Debug.Log(GameObject.FindGameObjectWithTag("piecenumtext").name);/*.GetComponent<TextMeshProUGUI>();*/
+        placementCountText = GameObject.FindGameObjectWithTag("piecenumtext").GetComponent<TextMeshProUGUI>();
+    }
 
     public void SetPieceData(MapDataScriptableNew piece, bool isParent)
     {
@@ -129,6 +140,9 @@ public class PieceObject : MonoBehaviour, IClickable, IDraggable
 
             placeAnim.OnComplete(() => { _spriteRenderer.sortingOrder = 1; });
             _audioManger.PlayTick();
+            Debug.Log("worked1");
+
+           
 
         }
         else
@@ -158,6 +172,7 @@ public class PieceObject : MonoBehaviour, IClickable, IDraggable
 
             placeAnim.OnComplete(() => { _spriteRenderer.sortingOrder = 1; });
             _audioManger.PlayTick();
+            Debug.Log("worked2");
             endCallBack();
         }
         else
@@ -189,10 +204,20 @@ public class PieceObject : MonoBehaviour, IClickable, IDraggable
     bool IsInCorrectPlace()
     {
         Vector2 dist = new Vector2(transform.localPosition.x - _data.Position.x, transform.localPosition.y - _data.Position.y);
-            
-        Debug.Log(dist.sqrMagnitude);
 
+        if (dist.sqrMagnitude < (_placeTolarence * _placeTolarence))
+        {
+            Debug.Log("succesfully placed");
+            correctlyPlacedCount++;
+            Debug.Log("correctlyPlacedCount" + correctlyPlacedCount);
+            UpdatePlacementCountText();
+        }
+
+        Debug.Log(dist.sqrMagnitude);
         return dist.sqrMagnitude < (_placeTolarence*_placeTolarence);
     }
-
+    private void UpdatePlacementCountText()
+    {
+        placementCountText.text = $"{correctlyPlacedCount}/{totalObjects}";
+    }
 }

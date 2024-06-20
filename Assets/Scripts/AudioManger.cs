@@ -7,10 +7,11 @@ public class AudioManger : MonoBehaviour
     
     AudioSource _audioSource;
 
-
     private void Awake()
     {
-        _audioSource = GetComponent<AudioSource>();
+   
+      _audioSource = GetComponent<AudioSource>();
+        
     }
 
     public void PlayTick()
