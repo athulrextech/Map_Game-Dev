@@ -6,9 +6,11 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
     public TMP_InputField username;
+    public GameObject settingsMenuUI;
 
     private void Start()
     {
+        settingsMenuUI.SetActive(false);
        username.text = PlayerPrefs.GetString("username");
     }
     private void Update()
@@ -33,6 +35,15 @@ public class MainMenu : MonoBehaviour
     public void SendUsername()
     {
         PlayerPrefs.SetString("username", username.text);
+        settingsMenuUI.SetActive(false);
         Debug.Log("name entered successfully");
+    }
+    public void Settings()
+    {
+        settingsMenuUI.SetActive(true);       
+    }
+    public void Cancel()
+    {
+        settingsMenuUI.SetActive(false);
     }
 }

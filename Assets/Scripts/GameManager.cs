@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] public TextMeshProUGUI currentTime;
     private string formattedStopTime;
     [SerializeField] public Ads _ads;
+    public bool gameIsPaused = false;
+    public GameObject pausePanelUI;
 
     //Ads ads = GameObject.FindGameObjectWithTag("ads").GetComponent<Ads>();
 
@@ -262,5 +264,25 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void Pause()
+    {
+        pausePanelUI.SetActive(true);
+        Time.timeScale = 0f;
+        CamController.canDrag = false;
+        gameIsPaused = true;
+
+    }
+    public void Resume()
+    {
+        pausePanelUI.SetActive(false);
+        Time.timeScale = 1f;
+        CamController.canDrag = true;
+        gameIsPaused = false;
+    }
+    public void Home()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 
 }
